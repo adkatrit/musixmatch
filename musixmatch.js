@@ -3,6 +3,7 @@ var request = require('request');
 var MusixMatch = function(apiKey){
     this.apiKey = apiKey;
     this.baseUrl = 'http://api.musixmatch.com/ws/1.1/';
+    return this;
 }
 
 MusixMatch.prototype.request = function(full_url, cb){
@@ -179,22 +180,7 @@ MusixMatch.prototype.utf8 = function(string){
     return string.toString('utf8');
 }
 
-var musix = new MusixMatch('8c5f9546ae78820af62a54c39ab9771c');
-
-search = {};
-search.q_lyrics='sunshine';
-search.page=1;
-
-musix.track().search(search,function(result){
-    console.log(result);
-    var tracks = result.message.body.track_list;
-    for(var i in tracks){
-        console.log(tracks[i])
-    }
-})
-
-
-
+module.exports.MusixMatch = MusixMatch;
 
 
 
