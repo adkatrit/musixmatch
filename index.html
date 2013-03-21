@@ -30,7 +30,7 @@
       <section>
         <p>Each the api endpoints are mapped to a musixMatch function</p>
 
-alert('hi')<div class="highlight"><pre><span class="kd">var</span> <span class="nx">musixMatch</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"./musixmatch.js"</span><span class="p">);</span>
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">musixMatch</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"./musixmatch.js"</span><span class="p">);</span>
 <span class="kd">var</span> <span class="nx">musix</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">musixMatch</span><span class="p">.</span><span class="nx">MusixMatch</span><span class="p">(</span><span class="s1">'API_KEY_HERE'</span><span class="p">);</span>
 
 <span class="nx">musix</span><span class="p">.</span><span class="nx">track</span><span class="p">().</span><span class="nx">search</span><span class="p">({</span><span class="nx">page</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span> <span class="nx">q</span><span class="o">:</span><span class="s2">"sunshine"</span><span class="p">},</span><span class="kd">function</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span>
