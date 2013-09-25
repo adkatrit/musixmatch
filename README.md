@@ -14,3 +14,7 @@ musix.track().search({page:1, q:"sunshine"},function(n){
     console.log(n.message.body.track_list);
 });
  ```
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/adkatrit/musixmatch/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
